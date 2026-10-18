@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <script src="./js/user.js" defer></script>
+    <script src="./js/userManager.js" defer></script>
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+<div class="registration">
+<h1>User Registration</h1>
+<form name="registrationForm">
+    <label for="username">Name</label>
+    <input type="text" id="username" name="username" placeholder="Name">
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age" placeholder="Age">
+    <div>
+        <button type="submit" id="submitButton">Register</button>
+    </div>
+</form>
+<p id="errors"></p> <br>
+<div class="registeredUsers"></div> <br>
+</div>
+</body>
+</html>

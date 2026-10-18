@@ -1,0 +1,21 @@
+#errors {
+    color: red;
+}
+
+form label {
+    display: block;
+    width: 55%;
+    margin: 0 auto 5px;
+    text-align: left;
+}
+
+form input[type=text] {
+    display: block;
+    width: 55%;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+}
+
+form button {
+    margin-bottom: 10px;
+}
