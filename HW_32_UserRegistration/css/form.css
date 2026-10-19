@@ -19,3 +19,21 @@ form input[type=text] {
 form button {
     margin-bottom: 10px;
 }
+
+.registeredUsers p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.registeredUsers button {
+    color: blue;
+    margin: 5px;
+}
+
+.registeredUsers button.filter-active {
+    background-color: seagreen;
+    color: white;
+    border: 2px solid darkgreen;
+}

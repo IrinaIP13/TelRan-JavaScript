@@ -1,9 +1,10 @@
 function createUserManager() {
-    const users = [];
+    let users = [];
 
     return {
         addUser: (user) => [users.push(user)],
-        getUsers: () => [...users]
+        getUsers: () => [...users],
+        deleteUser: (id) => {users = users.filter(user => user.id !== id)},
     }
 }
 
