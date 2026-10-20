@@ -5,6 +5,11 @@ function createUser({ username = '', age, ...rest }) {
     if (!username){
         throw new Error('Name is required');
     }
+
+    if (objUser.age === ''){
+        throw new Error('Age is required');
+    }
+
     if (120 < age || age < 0 || !Number.isInteger(age)){
         throw new Error('Invalid age');
     }

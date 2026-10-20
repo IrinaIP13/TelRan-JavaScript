@@ -19,9 +19,6 @@ registrationForm.onsubmit = function(event)  {
 
     try {
         const objUser = Object.fromEntries(new FormData(event.target))
-        if (objUser.age === ''){
-            throw new Error('Age is required');
-        }
         objUser.age = +objUser.age;
         const newUser = createUser(objUser);
         userManager.addUser(newUser);
@@ -30,11 +27,11 @@ registrationForm.onsubmit = function(event)  {
         arrayUsersToHTML(userManager.getUsers());
         event.target.reset();
     } catch (error) {
+        console.error(error.message);
         errors.textContent = error.message;
     }finally {
         console.log('Registration attempt completed');
     }
-
 }
 
 
